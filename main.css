@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(images/951553-mario-backgrounds-1920x1080-mobile.jpg);
+  background-size: cover;
+  background-color: ivory;
+  background-blend-mode: darken;
+  margin: 0;
+}
+
+#notes {
+  width: 500px;
+  border: 1px solid grey;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid {
+  border: 1px solid grey;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cell {
+  border: 1px solid grey;
+  width: 11.11%;
+  height: 11.11%;
+}
+
+.lili {
+  background-image: url(images/6363877.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.gameboy {
+  background-image: url(images/pngwave.png);
+  background-size: contain;
+}
+
+.netflix {
+  background-image: url(images/netflix-logo-png-2616.png);
+  background-size: cover;
+  background-position: center;
+}
