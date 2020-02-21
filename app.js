@@ -59,25 +59,36 @@ function main() {
     }
   })
 
-  if (gameboyIndex > 53 && gameboyIndex < 63) {
-    setInterval (() => {
-      cells[gameboyIndex].classList.remove('gameboy')
-      gameboyIndex += 1
-      cells[gameboyIndex].classList.add('gameboy')
-    }, 1000) 
-  } else {
-    return
-  }
 
-  if (netflixIndex > 44 && netflixIndex < 54 ) {
+  if (gameboyIndex > 53 && gameboyIndex < 62) {
     setInterval (() => {
-      cells[netflixIndex].classList.remove('netflix')
-      netflixIndex -= 1
-      cells[netflixIndex].classList.add('netflix')
+      if (gameboyIndex === 62) {
+        cells[gameboyIndex].classList.remove('gameboy')
+        gameboyIndex -= (width - 1)
+        cells[gameboyIndex].classList.add('gameboy')
+        
+      } else {
+        cells[gameboyIndex].classList.remove('gameboy')
+        gameboyIndex += 1
+        cells[gameboyIndex].classList.add('gameboy')
+        console.log(gameboyIndex)
+      }
     }, 1000) 
-  } else {
-    return
-  }
+  } 
+
+  if (netflixIndex > 44 && netflixIndex < 54) {
+    setInterval (() => {
+      if (netflixIndex === 45) {
+        cells[netflixIndex].classList.remove('netflix')
+        netflixIndex += (width - 1)
+        cells[netflixIndex].classList.add('netflix')
+      } else {
+        cells[netflixIndex].classList.remove('netflix')
+        netflixIndex -= 1
+        cells[netflixIndex].classList.add('netflix')
+      }
+    }, 1000) 
+  } 
 
 
 
