@@ -47,11 +47,35 @@ body {
 
 .gameboy {
   background-image: url(images/pngwave.png);
-  background-size: contain;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .netflix {
   background-image: url(images/netflix-logo-png-2616.png);
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cat {
+  background-image: url(images/pusheen-png-pusheen-cat-pusheen-unicorn-pusheen-png-260_260.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.drink {
+  background-image: url(images/PinClipart.com_martini-clip-art_1338214.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pc {
+  background-image: url(images/kisspng-laptop-computer-icons-computer-monitors-desktop-co-laptop-png-vector-5ab116383990f6.3151876315215550002358.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
