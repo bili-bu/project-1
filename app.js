@@ -221,7 +221,6 @@ function main() {
 
   function gameOver() {
     if (lives === 0) {
-      grid.style.display = 'none'
       gameover.style.display = 'block'
       restartButton.addEventListener('click', () => {
         window.location.reload()

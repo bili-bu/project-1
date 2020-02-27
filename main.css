@@ -67,18 +67,18 @@ button {
   margin: 20px;
   padding: 20px;
   text-align: justify;
-  background-color: rgba(127, 179, 242, 0.7);
-  font-family: 'Covered By Your Grace';
+  background-color: rgba(47, 101, 167, 0.8);
+  font-family: 'Bungee';
 }
 
 h3 {
   font-size: 24px;
-  margin: 20px
+  margin: 30px
 }
 
 p {
-  font-size: 20px;
-  margin: 20px;
+  font-size: 18px;
+  margin: 30px;
 }
 
 .grid {
@@ -105,42 +105,42 @@ p {
 }
 
 .gameboy {
-  background-image: url(images/pngwave.png);
+  background-image: url(images/donkey-kong-png-gif-20-original.gif);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .netflix {
-  background-image: url(images/netflix-logo-png-2616.png);
+  background-image: url(https://media.giphy.com/media/6RsYcS66Iso0/source.gif);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .cat {
-  background-image: url(images/Y3il.gif);
-  background-size: 100%;
+  background-image: url(https://media.giphy.com/media/5w2c0FdHN6XhFQmVS7/source.gif);
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .drink {
-  background-image: url(images/donkey-kong-png-gif-20-original.gif);
+  background-image: url(https://media.giphy.com/media/Qoi8ET81xWbG8/source.gif);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pc {
-  background-image: url(images/PinClipart.com_heaven-clipart_349334.png);
-  background-size: 80%;
+  background-image: url(images/iconfinder_Castle_2913096.png);
+  background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .success {
-  background-image: url(images/Success-PNG-Image.png);
+  background-image: url(images/kisspng-thumb-signal-computer-icons-clip-art-thumbs-up-emoji-5b4945e4392c14.1565423115315286762342.png);
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
