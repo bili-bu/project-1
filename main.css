@@ -1,48 +1,107 @@
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  background-image: url(images/951553-mario-backgrounds-1920x1080-mobile.jpg);
+  background-size: cover;
+  color: ivory;
+}
+
+main {
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-image: url(images/951553-mario-backgrounds-1920x1080-mobile.jpg);
+}
+
+img {
+  margin: 40px;
+  width: 400px;
+}
+
+h1 {
+  font-family: 'Bungee Shade';
+  font-size: 46px;
+  padding: 60px 60px 20px 60px;
+}
+
+h2 {
+  font-family: 'Covered By Your Grace';
+  /* text-decoration: underline; */
+  font-size: 32px;
+  padding: 0 90px;
+}
+
+.start {
+  text-align: center;
+  display: block;
+  background-image: url(images/princesspeach-1582230864486-6050.jpg);
+  background-position: center;
   background-size: cover;
-  background-color: ivory;
-  background-blend-mode: darken;
-  color: ivory;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  font-weight: bold;
+  color: fuchsia;
+  margin: 60px;
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.gameover {
+  text-align: center;
+  display: none; 
   margin: 0;
 }
 
 #notes {
   width: 500px;
-  border: 1px solid grey;
+  border: 1px solid ivory;
   margin: 20px;
   padding: 20px;
-  text-align: center;
+  text-align: justify;
+  background-color: rgba(127, 179, 242, 0.7);
+  font-family: 'Covered By Your Grace';
+}
+
+h3 {
+  font-size: 24px;
+  margin: 20px
+}
+
+p {
+  font-size: 20px;
+  margin: 20px;
 }
 
 .grid {
-  border: 1px solid grey;
+  border: 1px solid ivory;
   width: 600px;
   height: 600px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  background-color: rgba(255, 255, 240, 0.5);
 }
 
 .cell {
-  border: 1px solid grey;
+  border: 1px solid;
   width: 11.11%;
   height: 11.11%;
 }
 
 .lili {
-  background-image: url(images/6363877.png);
-  background-size: cover;
+  background-image: url(images/peach-sprite-png-8-transparent.png);
+  background-size: 40%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .gameboy {
@@ -60,22 +119,29 @@ body {
 }
 
 .cat {
-  background-image: url(images/pusheen-png-pusheen-cat-pusheen-unicorn-pusheen-png-260_260.jpg);
+  background-image: url(images/Y3il.gif);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .drink {
-  background-image: url(images/PinClipart.com_martini-clip-art_1338214.png);
+  background-image: url(images/donkey-kong-png-gif-20-original.gif);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pc {
-  background-image: url(images/kisspng-laptop-computer-icons-computer-monitors-desktop-co-laptop-png-vector-5ab116383990f6.3151876315215550002358.png);
-  background-size: 100%;
+  background-image: url(images/PinClipart.com_heaven-clipart_349334.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.success {
+  background-image: url(images/Success-PNG-Image.png);
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
