@@ -3,9 +3,12 @@ function main() {
   // Start screen set up 
   const start = document.querySelector('.start')
   const startButton = document.querySelector('.play')
+  const audio = document.querySelector('#audio')
 
   startButton.addEventListener('click', () => {
     start.style.display = 'none'
+    audio.src = 'music/Super Mario Bros. medley.mp3' 
+    audio.play()
   })
 
   // Grid items to construct the JS grid
@@ -240,7 +243,7 @@ function main() {
   }
 
   const functionCalledInterval = setInterval(() => {
-    if (functionCalled !== 0 && functionCalled % 3 === 0) {
+    if (functionCalled !== 0 && functionCalled === 3) {
       clearInterval(functionCalledInterval)
       clearInterval(gameboyInterval)
       clearInterval(netflixInterval)
