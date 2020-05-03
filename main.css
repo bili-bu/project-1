@@ -9,9 +9,9 @@ body {
   color: ivory;
 }
 
-main {
+.gameboard {
   height: 100vh;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -97,42 +97,42 @@ p {
   height: 11.11%;
 }
 
-.lili {
+.princess {
   background-image: url(images/peach-sprite-png-8-transparent.png);
   background-size: 40%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.gameboy {
+.DK {
   background-image: url(images/donkey-kong-png-gif-20-original.gif);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.netflix {
+.mario {
   background-image: url(https://media.giphy.com/media/6RsYcS66Iso0/source.gif);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.cat {
+.mushroom {
   background-image: url(https://media.giphy.com/media/5w2c0FdHN6XhFQmVS7/source.gif);
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.drink {
+.finn {
   background-image: url(https://media.giphy.com/media/Qoi8ET81xWbG8/source.gif);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.pc {
+.home {
   background-image: url(images/iconfinder_Castle_2913096.png);
   background-size: 90%;
   background-position: center;
