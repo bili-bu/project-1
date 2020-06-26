@@ -22,6 +22,10 @@ img {
   width: 400px;
 }
 
+.winner {
+  width: 550px;
+}
+
 h1 {
   font-family: 'Bungee Shade';
   font-size: 46px;
@@ -30,7 +34,6 @@ h1 {
 
 h2 {
   font-family: 'Covered By Your Grace';
-  /* text-decoration: underline; */
   font-size: 32px;
   padding: 0 90px;
 }
@@ -53,6 +56,12 @@ button {
   padding: 30px;
   border-radius: 15px;
   display: inline-block;
+}
+
+.gamewon {
+  text-align: center;
+  display: none; 
+  margin: 0;
 }
 
 .gameover {

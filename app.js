@@ -5,11 +5,11 @@ function main() {
   const gameboard = document.querySelector('.gameboard')
   const startButton = document.querySelector('.play')
   const audio = document.querySelector('#audio')
+  const gamewon = document.querySelector('.gamewon')
   const gameover = document.querySelector('.gameover')
-  const restartButton = document.querySelector('.restart')
+  const restartButton = document.querySelectorAll('.restart')
   const livesText = document.querySelector('.lives')
-  const pointsText = document.querySelector('.points')
-
+  
   // Start screen set up 
   startButton.addEventListener('click', () => {
     gameboard.style.display = 'flex'
@@ -26,7 +26,6 @@ function main() {
 
   let lives = 3
   let points = 0
-  let functionCalled = 0
 
   // Items on the grid
   const homeIndex = [2, 4, 6]
@@ -36,7 +35,7 @@ function main() {
   const finnIndex = [26, 23, 20]
 
   let princess = 76
-  let intervalTime = 1000
+  const intervalTime = 500
 
   // Construction of the grid and placing items in cell lomushroomions at the beginning of the game
   for (let i = 0; i < gridCellCount; i++) {
@@ -153,7 +152,7 @@ function main() {
               cells[76].classList.add('princess')
               lives -= 1
               livesText.innerHTML = `${lives}`
-              gameOver
+              gameOver()
             }
           }
           cells[marioIndex[i]].classList.remove('mario')
@@ -223,47 +222,31 @@ function main() {
 
   finnInterval()
 
-  function gameOver() {
-    if (lives === 0) {
-      gameboard.style.display = 'none'
-      gameover.style.display = 'block'
-      restartButton.addEventListener('click', () => {
-        window.location.reload()
-      })
-    }
-  }
-
   function getHome() {
     cells[princess].classList.remove('home')
     cells[princess].classList.remove('princess')
     cells[princess].classList.add('success')
     princess = 76
     cells[76].classList.add('princess')
-    points += 100
-    pointsText.innerHTML = `${points}`
-    functionCalled += 1
+    points += 1
+    if (points === 3) {
+      gameboard.style.display = 'none'
+      gamewon.style.display = 'block'
+      restartButton[0].addEventListener('click', () => {
+        window.location.reload()
+      })
+    }
   }
 
-  const functionCalledInterval = setInterval(() => {
-    if (functionCalled !== 0 && functionCalled === 3) {
-      clearInterval(functionCalledInterval)
-      clearInterval(DKInterval)
-      clearInterval(marioInterval)
-      clearInterval(finnInterval)
-      clearInterval(mushroomInterval)
-      alert('Good work! Now lets try going a little faster')
-      intervalTime /= 2
-      DKInterval()
-      marioInterval()
-      finnInterval()
-      mushroomInterval()
-      for (let i = 0; i < homeIndex.length; i++) {
-        cells[homeIndex[i]].classList.remove('success')
-        cells[homeIndex[i]].classList.add('home')
-      }
+  function gameOver() {
+    if (lives === 0) {
+      gameboard.style.display = 'none'
+      gameover.style.display = 'block'
+      restartButton[1].addEventListener('click', () => {
+        window.location.reload()
+      })
     }
-  }, 200)
-
+  }
 
 }
 
