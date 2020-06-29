@@ -1,39 +1,3 @@
-### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) 
-
-# project-1: **Princess Peach avoids her friends**
-
-
-## Overview
-
-This was my first project during my time training at the General Assembly bootcamp. 
-
-The task was to build a grid-based computer game that rendered in a browser. This project was front-end only and as such we used HTML and CSS as well as plain ‘vanilla’ JavaScript to build out the game.
-
-We were given many different options and I decided to recreate the cult classic frogger. To give it a bit of an unusual twist, I thought it would be fun to delve into the Super Mario universe for characters and style. 
-
-
-*Princess Peach had a long day ... she wants to get home and relax, but **alas** her road is blocked by four of her friends who are all quite keen to chat. Guide P.P. across the grid to get her home as quickly as possible. If you run into a friend you will lose a life and have to start again. You have three lives!* 
-
-
-Click **[here](https://bili-bu.github.io/project-1/)** to play.
-
-### The brief
-
-* Render a game in the browser
-* Design logic for winning & visually display which player won
-* Stick with **KISS (Keep It Simple Stupid)** and **DRY (Don't Repeat Yourself)** principles
-* Use **Javascript** for **DOM manipulation**
-* **Deploy your game online**, where the rest of the world can access it
-
-### Technologies used
-
-* HTML5
-*	CSS3
-*	JavaScript
-*	Git
-*	GitHub
-*	Google Fonts
-
 
 ## The game 
 
