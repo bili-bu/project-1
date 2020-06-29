@@ -103,6 +103,12 @@ function main() {
       gameOver()
     }
     if (cells[princess].classList.contains('home')) {
+      cells[princess].classList.remove('home')
+      cells[princess].classList.remove('princess')
+      cells[princess].classList.add('success')
+      princess = 76
+      cells[76].classList.add('princess')
+      points += 1
       getHome()
     }
   })
@@ -223,12 +229,6 @@ function main() {
   finnInterval()
 
   function getHome() {
-    cells[princess].classList.remove('home')
-    cells[princess].classList.remove('princess')
-    cells[princess].classList.add('success')
-    princess = 76
-    cells[76].classList.add('princess')
-    points += 1
     if (points === 3) {
       gameboard.style.display = 'none'
       gamewon.style.display = 'block'
