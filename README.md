@@ -223,18 +223,18 @@ As mentioned before, whenever P.P. comes in contact with one of her friends she 
 
 The logic for losing is very similar to that of winning. The game-board disappears and you are left with a game over screen which has a button asking the player whether he wants to play again.
 
-### Conclusion 
+## Conclusion 
 
-## Challenges
+### Challenges
 
 During the first month of the GA Immersive Software Engineering course we focused nearly exclusively on vanilla JavaScript which was the first language I had to learn from scratch. Although I enjoyed learning JS I also found parts of it challenging. I didn't feel very confident with some of the more advanced functions we had learned and was pretty lost when we started on this first project. This is why I chose to make this game as easy as possible for me to build. I really embraced the idea of KISS and wrote code that I felt confident writing. 
 
 In retrospect I should have challenged myself more and even though I was doing very well with my project schedule I should have left some time for me to look into more advanced functions to the game and implemented some of my stretch goals such as making the obstacles appear truly randomly or creating multiple levels of difficulty to the game, which is easily winnable as it currently stands.
 
-## Victories
+### Victories
 
 I feel that given this was my first project I'm proud that I managed to build a fully functional game which has no bugs and is not breaking. I also managed to make it visually pleasing which gives me great joy as well. I very much enjoyed the process and I feel much more confident in my JavaScript abilities now that I have proof I can build something with very little help from the internet or teaching staff. 
 
-## Potential Changes
+### Potential Changes
 
 While writing the ReadMe I was hard-pressed not to make any sweeping changes to the code since I noticed that there was a lot of repetition. Refactoring my code on this project would definitely be my highest priority, closely followed by making it more complex as a game with extra levels and random obstacle movement.
